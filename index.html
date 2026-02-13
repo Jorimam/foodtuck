@@ -21,6 +21,9 @@
                     <h1 style="font-size: 20px;">Food<span class="tuck">truck</span></h1>
                 </div>
                 <div class="nav">
+                    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="bx bx-menu"></i>
+                    </button>
                     <div class="nav-list">
                         <ul>
                             <li><a href="">Home<i class="bx bx-chevron-down" id="homechev" style="position: absolute;top: 20px; left: 90px;"></i> </a></li>
@@ -650,5 +653,11 @@
 
     </section>
     
+    <script>
+        function toggleMobileMenu() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
